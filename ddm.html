@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DDM Department - GCTW Faisalabad</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f8f6fb;color:#333}
+header{background:#7b1fa2;color:#fff;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0}
+.logo{font-size:24px;font-weight:bold}
+nav ul{display:flex;list-style:none;gap:20px}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+.hero{height:70vh;background:linear-gradient(rgba(123,31,162,.6),rgba(123,31,162,.6)),url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.hero h1{font-size:48px}
+section{padding:60px 8%}
+.title{text-align:center;color:#7b1fa2;margin-bottom:30px}
+.about,.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.about img,.gallery img{width:100%;border-radius:10px}
+.cards,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:#7b1fa2;margin-bottom:10px}
+.fac{background:#7b1fa2;color:#fff;text-align:center;padding:18px;border-radius:8px}
+footer{background:#4a148c;color:#fff;text-align:center;padding:20px}
+@media(max-width:768px){.about,.contact{grid-template-columns:1fr}header{flex-direction:column}nav ul{flex-wrap:wrap;justify-content:center;margin-top:10px}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header><div class="logo">DDM Department</div>
+<nav><ul><li><a href="#">Home</a></li><li><a href="#about">About</a></li><li><a href="#courses">Courses</a></li><li><a href="#career">Career</a></li><li><a href="#contact">Contact</a></li></ul></nav></header>
+
+<section class="hero"><div><h1>Dress Designing & Making</h1><p>Government College of Technology for Women Faisalabad</p></div></section>
+
+<section id="about">
+<h2 class="title">About Department</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80">
+<div><p>The Dress Designing & Making Department prepares students in fashion design, garment construction, embroidery, textile science and boutique management through practical training and creative projects.</p></div>
+</div></section>
+
+<section id="courses">
+<h2 class="title">3-Year Course Outline</h2>
+<div class="cards">
+<div class="card"><h3>First Year</h3><ul><li>Introduction to Fashion</li><li>Basic Stitching</li><li>Textile Science</li><li>Fashion Drawing</li><li>Fabric Identification</li></ul></div>
+<div class="card"><h3>Second Year</h3><ul><li>Pattern Making</li><li>Garment Construction</li><li>Embroidery</li><li>CAD for Fashion</li><li>Fashion Illustration</li></ul></div>
+<div class="card"><h3>Third Year</h3><ul><li>Advanced Fashion Design</li><li>Boutique Management</li><li>Bridal Wear</li><li>Industrial Training</li><li>Final Project</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Facilities</h2>
+<div class="cards">
+<div class="fac">Modern Sewing Lab</div>
+<div class="fac">Fashion Studio</div>
+<div class="fac">Embroidery Lab</div>
+<div class="fac">Professional Faculty</div>
+</div>
+</section>
+
+<section id="career">
+<h2 class="title">Career Opportunities</h2>
+<div class="cards">
+<div class="card"><h3>Fashion Designer</h3></div>
+<div class="card"><h3>Boutique Owner</h3></div>
+<div class="card"><h3>Garment Supervisor</h3></div>
+<div class="card"><h3>Fashion Illustrator</h3></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80">
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact</h2>
+<div class="contact">
+<div><h3>GCTW Faisalabad</h3><p>Punjab, Pakistan</p><p>Email: info@gctwf.edu.pk</p></div>
+<form><input style="width:100%;padding:10px;margin:8px 0" placeholder="Name"><input style="width:100%;padding:10px;margin:8px 0" placeholder="Email"><textarea style="width:100%;padding:10px;margin:8px 0" rows="5" placeholder="Message"></textarea><button style="padding:12px 24px;background:#7b1fa2;color:#fff;border:none;border-radius:5px">Send</button></form>
+</div>
+</section>
+<footer>© 2026 Government College of Technology for Women Faisalabad - DDM Department</footer>
+</body></html>

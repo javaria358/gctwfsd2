@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government College of Technology for Women Faisalabad</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#333;
+}
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,64,128,.95);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+color:#fff;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo span{
+color: #fff;;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav li{
+margin-left:30px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD54F;
+}
+
+/* ================ HERO ================= */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(38, 10, 163, 0.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:#fff;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#ff9800;
+padding:14px 20px;
+border-radius:40px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e68900;
+transform:scale(1.05);
+}
+
+/* ============== SECTION =============== */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:36px;
+color:#004080;
+margin-bottom:40px;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+}
+
+/* PROGRAMS */
+
+.cards{
+display:grid;
+ grid-template-columns:repeat(3,1fr);
+    gap:20px;;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#004080;
+margin-bottom:15px;
+}
+
+/* ADMISSION */
+
+.admission{
+background:#004080;
+color:#fff;
+text-align:center;
+border-radius:20px;
+
+}
+
+.admission h2{
+margin-bottom:30px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CONTACT */
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+
+padding:15px;
+margin-bottom:15px;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+.contact button{
+
+background:#004080;
+color:white;
+padding:15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.contact button:hover{
+background:#002d5f;
+}
+
+/* FOOTER */
+
+footer{
+background:#001f3f;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.about,
+.contact{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+nav li{
+
+margin:10px;
+
+}
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card-link .card:hover{
+    transform:translateY(-10px);
+    transition:0.4s;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo"><img src="images/tevta_header_logo.png" alt="" width="60" height="60">
+
+GCT<span>W</span> Faisalabad
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#programs">Programs</a></li>
+
+<li><a href="#admission">Admission</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div >
+<img src="images/gctw.jpg" alt="" width="1000" height="500">
+<h2>Government College of Technology for Women Faisalabad</h2>
+
+<p>
+Empowering Women Through Quality Technical Education
+</p>
+
+<a href="#admission" class="btn">
+Apply Now
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80">
+
+<div>
+
+<p>
+
+Government College of Technology for Women Faisalabad provides quality technical education for female students. The college offers Diploma of Associate Engineering (DAE) in Computer Information Technology and Dress Designing & Making. Our mission is to prepare skilled professionals through modern teaching methods, practical training, and innovation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAMS -->
+
+<section id="programs">
+
+<h2 class="title">Our Programs</h2>
+
+<div class="cards">
+
+<a href="cit.html" target="_blank" class="card-link">
+    <div class="card">
+        <h3>Computer Information Technology</h3>
+        <p>3-Year Diploma of Associate Engineering (Equivalent to F.Sc.)</p>
+    </div>
+</a>
+
+<a href="ddm.html" target="_blank" class="card-link">
+    <div class="card">
+        <h3>Dress Designing & Making</h3>
+        <p>3-Year Diploma (Equivalent to F.A.)</p>
+    </div>
+</a>
+
+<a href="#" class="card-link">
+    <div class="card">
+        <h3>Fashion Designing</h3>
+        <p>One Year Diploma in Fashion Designing</p>
+    </div>
+</a>
+
+<a href="#" class="card-link">
+    <div class="card">
+        <h3>Office Management Assistant</h3>
+        <p>One Year Diploma in Office Management</p>
+    </div>
+</a>
+
+<a href="#" class="card-link">
+    <div class="card">
+        <h3>Short Courses (6 Months)</h3>
+        <ul>
+            <li>Beautician</li>
+            <li>Cooking</li>
+        </ul>
+    </div>
+</a>
+
+</div>
+
+</section>
+
+<!-- ADMISSION -->
+
+<section id="admission">
+
+<div class="admission">
+
+<h2 style="color: #fff;">Admissions Open 2026</h2>
+
+<p style="color: #fff;">
+
+Join the leading women's technical institute and build your future with practical education.
+
+</p>
+
+<br>
+
+<a href="admissionForm.html" target="_blank" class="btn">
+
+Apply Online
+
+</a>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="title">
+
+Campus Gallery
+
+</h2>
+
+<div class="gallery">
+
+<img src="images/admission.jpg">
+
+<img src="images/skill.jpg">
+
+<img src="images/admission.jpg">
+
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">
+
+Contact Us
+
+</h2>
+
+<div class="contact">
+
+<div>
+
+<h3>Government College of Technology for Women Faisalabad</h3>
+
+<br>
+
+📍 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.3917821195496!2d73.10734627441965!3d31.403330152917324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922680a9e559f2b%3A0x5521a93f220e1d5a!2sGovernment%20College%20of%20Technology%20for%20Women%2C%20Faisalabad!5e0!3m2!1sen!2s!4v1783185281868!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<p>📞 +92-41-XXXXXXX</p>
+
+<p>✉ info@gctwf.edu.pk</p>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Government College of Technology for Women Faisalabad
+
+</p>
+
+</footer>
+
+</body>
+</html>

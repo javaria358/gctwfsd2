@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form | Government College of Technology for Women Faisalabad</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef4ff;
+}
+
+/* Header */
+
+header{
+    background:#004080;
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+
+/* Banner */
+
+.banner{
+    background:linear-gradient(rgba(0,64,128,.7),rgba(0,64,128,.7)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.banner h1{
+    font-size:40px;
+}
+
+/* Form */
+
+.container{
+    max-width:950px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.container h2{
+    text-align:center;
+    color:#004080;
+    margin-bottom:25px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.full{
+    grid-column:1 / 3;
+}
+
+.buttons{
+    margin-top:25px;
+    text-align:center;
+}
+
+button{
+    padding:12px 28px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    margin:10px;
+}
+
+.submit{
+    background:#004080;
+    color:white;
+}
+
+.submit:hover{
+    background:#002b55;
+}
+
+.reset{
+    background:#ff9800;
+    color:white;
+}
+
+.reset:hover{
+    background:#e68900;
+}
+
+/* Footer */
+
+footer{
+    background:#002244;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.full{
+    grid-column:1;
+}
+
+.banner h1{
+    font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Government College of Technology for Women Faisalabad
+</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Programs</a></li>
+<li><a href="#">Admission</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="banner">
+<h1>Online Admission Form</h1>
+<p>Apply for Diploma Programs</p>
+</section>
+
+<div class="container">
+
+<h2>Student Admission Form</h2>
+
+<form>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter Full Name" required>
+</div>
+
+<div class="form-group">
+<label>Father's Name</label>
+<input type="text" placeholder="Enter Father's Name" required>
+</div>
+
+<div class="form-group">
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>CNIC / B-Form No.</label>
+<input type="text" placeholder="XXXXX-XXXXXXX-X">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="example@email.com">
+</div>
+
+<div class="form-group">
+<label>Mobile Number</label>
+<input type="tel" placeholder="03XXXXXXXXX">
+</div>
+
+<div class="form-group">
+<label>Select Program</label>
+
+<select required>
+
+<option>Select Course</option>
+
+<option>DAE Computer Information Technology</option>
+
+<option>Dress Designing & Making</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Last Qualification</label>
+
+<select>
+
+<option>Matric</option>
+
+<option>O-Level</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group full">
+
+<label>Permanent Address</label>
+
+<textarea rows="4" placeholder="Enter Complete Address"></textarea>
+
+</div>
+
+<div class="form-group full">
+
+<label>Upload Passport Size Photo</label>
+
+<input type="file">
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="submit" type="submit">
+
+Submit Application
+
+</button>
+
+<button class="reset" type="reset">
+
+Reset Form
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Government College of Technology for Women Faisalabad | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
